@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer className="footer">
             <p>
-                © {new Date().getFullYear()} Iryna Huryn. Built with React.
+                © {new Date().getFullYear()} Iryna Huryn. Designed & built by me.
             </p>
         </footer>
     );
