@@ -57,7 +57,7 @@ function Projects(){
     return (
         <section className="projects-section">
             <div className="section-header">
-                <h2>Projects</h2>
+                <h2>Projects </h2>
                 <h4>A selection of games and interactive projects I've worked on</h4>
             </div>
 
