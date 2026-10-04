@@ -2,17 +2,11 @@
     width: 100%;
 }
 
-
-/* ---------- PROJECTS SECTION ---------- */
-
 .projects-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 16px;
 }
-
-
-/* ---------- SECTION HEADER ---------- */
 
 .section-header {
     margin-bottom: 32px;
@@ -32,17 +26,11 @@
     font-size: 15px;
 }
 
-
-/* ---------- PROJECTS ---------- */
-
 .projects {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
-
-
-/* ---------- PROJECT CARD ---------- */
 
 .project-card {
     display: grid;
@@ -62,9 +50,6 @@
 .project-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
-
-
-/* ---------- CONTENT ---------- */
 
 .project-card-content {
     display: flex;
@@ -101,10 +86,9 @@
 
     font-size: 14px;
     line-height: 1.7;
+    text-align: justify;
 }
 
-
-/* ---------- CONTRIBUTION ---------- */
 
 .project-card-contribution {
     margin-bottom: 15px;
@@ -127,9 +111,6 @@
     line-height: 1.8;
 }
 
-
-/* ---------- TAGS ---------- */
-
 .project-card-tags {
     display: flex;
     flex-wrap: wrap;
@@ -149,15 +130,9 @@
     font-size: 12px;
 }
 
-
-/* ---------- SEE MORE ---------- */
-
 .project-more {
     display: none;
 }
-
-
-/* ---------- LINKS ---------- */
 
 .project-card-links {
     display: flex;
@@ -190,9 +165,6 @@
     font-size: 19px;
 }
 
-
-/* ---------- IMAGE ---------- */
-
 .project-card-media {
     display: flex;
     align-items: center;
@@ -212,6 +184,56 @@
 
     object-fit: contain;
 
+    border-radius: 10px;
+}
+
+.project-video-preview {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.project-video-preview img {
+    display: block;
+    width: 100%;
+    max-height: 330px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.project-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.72);
+    color: white;
+    font-size: 25px;
+
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-video-preview:hover .project-play-button {
+    transform: translate(-50%, -50%) scale(1.08);
+    background: #6366f1;
+}
+
+.project-card-media iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
     border-radius: 10px;
 }
 

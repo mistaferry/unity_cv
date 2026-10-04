@@ -97,17 +97,16 @@
 .contact-socials a {
     display: flex;
     align-items: center;
-    gap: 7px;
-
+    gap: 8px;
     color: #52525b;
-    font-size: 14px;
+    font-size: 15px; /* було 14px */
     font-weight: 500;
     text-decoration: none;
 }
 
 .contact-socials svg {
     color: #6366f1;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .contact-socials a:hover {
