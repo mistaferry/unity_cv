@@ -1,11 +1,12 @@
 import "/src/styles/Hero.css";
 import { FaUnity, FaCode, FaGitAlt } from "react-icons/fa";
+import profileImage from "../assets/profile.jpg";
 
 function Hero() {
     return (
         <section className="hero">
             <div className="hero-photo">
-                <img src="../assets/profile.jpg" alt="Iryna Huryn" />
+                <img src={profileImage} alt="Iryna Huryn" />
             </div>
 
             <div className="hero-content">
