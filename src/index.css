@@ -3,7 +3,7 @@ body {
 
     font-family: "Inter", sans-serif;
     color: #18181b;
-    background: #ffffff;
+    background: rgba(221, 170, 187, 0.2);
 
     -webkit-font-smoothing: antialiased;
 }
