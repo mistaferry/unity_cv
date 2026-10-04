@@ -4,7 +4,7 @@ function Projects(){
     const projects = [
         {
             id: 1,
-            image: "src/assets/dragon_soup_cover.png",
+            image: "../assets/dragon_soup_cover.png",
             title: "Dragon Soup",
             type: "University Team Project",
             description: "Dragon Soup is a fantasy tavern management game developed as a long-term university team project. The player manages a tavern while searching for a cure to a mysterious disease, sending adventurers on quests, collecting ingredients and cooking recipes.",
@@ -21,7 +21,7 @@ function Projects(){
         },
         {
             id: 2,
-            image: "src/assets/fishy_game_cover.jpg",
+            image: "../assets/fishy_game_cover.jpg",
             title: "Fishy Game",
             type: "University Team Project",
             description: "Fishy Game is a horde survival game where the player explores different ocean depths, fights increasingly dangerous enemies and develops their character through passive progression and upgrades. The game is controlled using a custom-built hardware controller with buttons, sliders, screen and LEDs.",
@@ -37,7 +37,7 @@ function Projects(){
         },
         {
             id: 3,
-            image: "src/assets/last_try_cover.png",
+            image: "../assets/last_try_cover.png",
             title: "Last Try",
             type: "University Team Project",
             description: "Last Try is an experimental strategy game built around eye tracking as the primary input method. The player must quickly observe and memorize available soldiers, assemble an army and make decisions under time pressure using their gaze to interact with the game.",
