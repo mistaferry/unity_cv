@@ -13,6 +13,17 @@ function ProjectCard({
                          youtube
                      }) {
     const [expanded, setExpanded] = useState(false);
+    const [showVideo, setShowVideo] = useState(false);
+
+    function getYoutubeEmbedUrl(url) {
+        if (!url) return "";
+
+        const videoId = url.includes("youtu.be/")
+            ? url.split("youtu.be/")[1]?.split("?")[0]
+            : new URL(url).searchParams.get("v");
+
+        return `https://www.youtube.com/embed/${videoId}`;
+    }
 
     return (
         <article className={`project-card ${expanded ? "expanded" : ""}`}>
@@ -70,7 +81,23 @@ function ProjectCard({
             </div>
 
             <div className="project-card-media">
-                <img src={image} alt={title} />
+                {showVideo ? (
+                    <iframe
+                        src={`${getYoutubeEmbedUrl(youtube)}?autoplay=1`}
+                        title={`${title} gameplay`}
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowFullScreen
+                    />
+                ) : (
+                    <button
+                        className="project-video-preview"
+                        onClick={() => setShowVideo(true)}
+                        aria-label={`Play ${title} gameplay`}
+                    >
+                        <img src={image} alt={title} />
+                        <span className="project-play-button">▶</span>
+                    </button>
+                )}
             </div>
 
         </article>
