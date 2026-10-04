@@ -1,15 +1,17 @@
-import ProjectCard from "./components/ProjectCard";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
+import Hero from "./components/Hero.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-      <ProjectCard
-          image="src/assets/dragon_soup_logo_bg.png"
-          title="Dragon Soup"
-          description="A fantasy tavern management game developed in Unity."
-          tags={["Unity", "C#", "Game Development"]}
-          github="https://github.com/DLuckYD/dragon-soup-game"
-          youtube="https://www.youtube.com/watch?si=y4kyKYZ12CvHMw2M&v=Md8u-3zo31Y&feature=youtu.be"
-      />
+      <div>
+          <Hero/>
+          <Projects/>
+          <Contact/>
+          <Footer/>
+      </div>
+
   );
 }
 
